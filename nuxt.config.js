@@ -13,11 +13,13 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css'}
+      { rel: 'stylesheet', href: 'https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css'},
+      { rel: 'stylesheet', href: 'https://unpkg.com/buefy/dist/buefy.min.css'}
     ],
     script: [
       { src: "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" },
-      { src: "https://use.fontawesome.com/releases/v5.2.0/css/all.css" }
+      { src: "https://use.fontawesome.com/releases/v5.2.0/css/all.css" },
+      { src: "https://unpkg.com/buefy/dist/buefy.min.js"}
     ]
   },
   /*
@@ -33,7 +35,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~plugins/buefy'
+    // '~plugins/buefy'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -44,7 +46,8 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    'nuxt-buefy'
+    'nuxt-buefy',
+    'bootstrap-vue/nuxt'
   ],
   /*
   ** Build configuration

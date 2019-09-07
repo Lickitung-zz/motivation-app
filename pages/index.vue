@@ -1,12 +1,12 @@
 <template>
   <div class="container">
-     <Header />
+    <NavBar />
     <div>
       <h1 class="title">
-        <Clock />
+      <Clock />
       </h1>
       <h2 class="subtitle">
-        <Quotes />
+      <Quotes />
       </h2>
     </div>
   </div>
@@ -15,13 +15,13 @@
 <script>
 import Clock from '~/components/Clock'
 import Quotes from '~/components/Quotes'
-import Header from '~/components/Header'
+import NavBar from '~/components/Header/NavBar/NavBar'
 
 export default {
   components: {
     Clock,
     Quotes,
-    Header
+    NavBar
   },
   created() {
     
