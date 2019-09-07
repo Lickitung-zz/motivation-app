@@ -7,6 +7,13 @@
             <b-field>
                 <b-switch v-model="isAmPm">AM/PM</b-switch>
             </b-field>
+            <div class="field">
+                <b-switch v-model="isSwitchedCustom"
+                    true-value="HH:MM:SS"
+                    false-value="HH:MM">
+                    {{ isSwitchedCustom }}
+                </b-switch>
+            </div>
             <b-field label="Select time">
                 <b-clockpicker
                     rounded
@@ -55,9 +62,10 @@ import Clock from '~/components/Clock'
                     'black',
                     'light',
                     'dark'
-                ]
+                ],
+                isSwitchedCustom: 'HH:MM:SS'
             }
-        } 
+        }
     }
 </script>
 
