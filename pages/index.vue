@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <NavBar />
+    
     <div>
       <h1 class="title">
       <Clock />
