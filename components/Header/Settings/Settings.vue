@@ -20,7 +20,7 @@
                 </template>
                 <ClockSettings />
                 <BackgroundSettings />
-                <b-menu-item icon="cellphone-link" label="UI Colors"></b-menu-item>
+                <UIColorsSettings />
                 <!-- <b-menu-item icon="cash-multiple" label="Payments" disabled></b-menu-item> -->
             </b-menu-item>
             </div>
@@ -40,11 +40,13 @@
 <script>
 import ClockSettings from '~/components/Header/Settings/Theme/ClockSettings'
 import BackgroundSettings from '~/components/Header/Settings/Theme/BackgroundSettings'
+import UIColorsSettings from '~/components/Header/Settings/Theme/UIColorsSettings'
     export default {
         layout: '',
         components: {
             ClockSettings,
-            BackgroundSettings
+            BackgroundSettings,
+            UIColorsSettings
         }
     }
 </script>
