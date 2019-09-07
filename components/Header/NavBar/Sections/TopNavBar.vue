@@ -15,9 +15,9 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-            <a class="navbar-item">
+            <nuxt-link class="navbar-item" to="/">
                 Home
-            </a>
+            </nuxt-link>
 
             <a class="navbar-item">
                 Documentation
@@ -36,9 +36,9 @@
                     Chrome Extension
                 </a>
                 <hr class="navbar-divider">
-                <a class="navbar-item">
+                <nuxt-link class="navbar-item" to="/settings">
                     Settings
-                </a>
+                </nuxt-link>
                 </div>
             </div>
             
