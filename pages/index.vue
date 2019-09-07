@@ -7,6 +7,14 @@
       <h2 class="subtitle">
       <Quotes />
       </h2>
+      <section>
+        
+        <!-- <button class="button is-primary is-medium"
+            @click="isCardModalActive = true">
+            Launch card modal (keep scroll)
+        </button> -->
+
+    </section>
     </div>
   </div>
 </template>

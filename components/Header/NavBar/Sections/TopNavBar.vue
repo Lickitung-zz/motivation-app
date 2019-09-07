@@ -29,9 +29,45 @@
                 </a>
 
                 <div class="navbar-dropdown">
-                <a class="navbar-item">
+                <b-button type="is-text" @click="isCardModalActive = true">
                     About
-                </a>
+                </b-button>
+                <b-modal :active.sync="isCardModalActive" :width="640" scroll="keep">
+                    <div class="card">
+                        <!-- <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="/static/img/placeholder-1280x960.png" alt="Image">
+                            </figure>
+                        </div> -->
+                        <div class="card-content">
+                            <div class="media">
+                                <!-- <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="/static/img/placeholder-1280x960.png" alt="Image">
+                                    </figure>
+                                </div> -->
+                                <div class="media-content">
+                                    This Chrome extension was built using Nuxt.JS and was made to make work a bit more exciting.
+                                <br>
+                                <small>v1.0</small>
+                                    <p class="subtitle is-6">
+                                        
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <p class="title is-4">Built by 
+                                        <a href="https://github.com/SIeep">
+                                            <b-button size="is-medium" icon-left="github-circle">
+                                                Brandon Evans
+                                            </b-button>
+                                        </a>
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </b-modal>
                 <a class="navbar-item">
                     Chrome Extension
                 </a>
@@ -64,7 +100,11 @@
 
 <script>
     export default {
-        
+        data() {
+            return {
+                isCardModalActive: false
+            }
+        }
     }
 </script>
 

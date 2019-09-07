@@ -2,27 +2,23 @@
     <div>
         <b-menu>
         <b-menu-list label="Settings">
-            <!-- <b-menu-item icon="information-outline" label="Home"> -->
-                <nuxt-link to="/" icon="information-outline">
-                    <!-- <b-menu-item icon="information-outline" label="Home">
-                    </b-menu-item> -->
-                    Home
-                </nuxt-link>
-            <!-- </b-menu-item> -->
+            <nuxt-link to="/" icon="information-outline">
+                Home
+            </nuxt-link>
             <div>
-                    <b-menu-item icon="settings" active expanded>
-                <template slot="label" slot-scope="props">
-                    Theme
-                    <b-icon
-                        class="is-pulled-right"
-                        :icon="props.expanded ? 'menu-down' : 'menu-up'">
-                    </b-icon>
-                </template>
-                <ClockSettings />
-                <BackgroundSettings />
-                <UIColorsSettings />
-                <!-- <b-menu-item icon="cash-multiple" label="Payments" disabled></b-menu-item> -->
-            </b-menu-item>
+                <b-menu-item icon="settings" active expanded>
+                    <template slot="label" slot-scope="props">
+                        Theme
+                        <b-icon
+                            class="is-pulled-right"
+                            :icon="props.expanded ? 'menu-down' : 'menu-up'">
+                        </b-icon>
+                    </template>
+                    <ClockSettings />
+                    <BackgroundSettings />
+                    <UIColorsSettings />
+                    <!-- <b-menu-item icon="cash-multiple" label="Payments" disabled></b-menu-item> -->
+                </b-menu-item>
             </div>
             
             <b-menu-item icon="account" label="Work Mode">
