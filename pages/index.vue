@@ -1,7 +1,7 @@
 <template>
   <div class="container">
+     <Header />
     <div>
-      <logo />
       <h1 class="title">
         <Clock />
       </h1>
@@ -15,11 +15,13 @@
 <script>
 import Clock from '~/components/Clock'
 import Quotes from '~/components/Quotes'
+import Header from '~/components/Header'
 
 export default {
   components: {
     Clock,
-    Quotes
+    Quotes,
+    Header
   },
   created() {
     

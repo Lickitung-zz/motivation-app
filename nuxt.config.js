@@ -12,10 +12,12 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css'}
     ],
     script: [
-      { src: "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" }
+      { src: "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" },
+      { src: "https://use.fontawesome.com/releases/v5.2.0/css/all.css" }
     ]
   },
   /*
@@ -31,6 +33,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~plugins/buefy'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -41,6 +44,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    'nuxt-buefy'
   ],
   /*
   ** Build configuration
