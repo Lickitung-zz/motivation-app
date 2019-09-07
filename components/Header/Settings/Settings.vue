@@ -19,7 +19,7 @@
                     </b-icon>
                 </template>
                 <ClockSettings />
-                <b-menu-item icon="cellphone-link" label="Background"></b-menu-item>
+                <BackgroundSettings />
                 <b-menu-item icon="cellphone-link" label="UI Colors"></b-menu-item>
                 <!-- <b-menu-item icon="cash-multiple" label="Payments" disabled></b-menu-item> -->
             </b-menu-item>
@@ -38,29 +38,13 @@
 </template>
 
 <script>
-import Clock from '~/components/Clock'
-import ClockSettings from '~/components/Header/Settings/ClockSettings'
+import ClockSettings from '~/components/Header/Settings/Theme/ClockSettings'
+import BackgroundSettings from '~/components/Header/Settings/Theme/BackgroundSettings'
     export default {
         layout: '',
         components: {
-            Clock,
-            ClockSettings
-        },
-        data() {
-            return {
-                selectedColor: 'primary',
-                colors: [
-                    'primary',
-                    'info',
-                    'success',
-                    'warning',
-                    'danger',
-                    'white',
-                    'black',
-                    'light',
-                    'dark'
-                ]
-            }
+            ClockSettings,
+            BackgroundSettings
         }
     }
 </script>

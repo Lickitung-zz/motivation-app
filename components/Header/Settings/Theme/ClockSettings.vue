@@ -31,6 +31,7 @@
                     <b-button type="is-dark"></b-button>
                 </b-dropdown-item>
             </b-dropdown>
+            <br>
         </h2>
     </b-menu-item>
 </template>
@@ -40,7 +41,23 @@ import Clock from '~/components/Clock'
     export default {
         components: {
             Clock
-        }
+        },
+        data() {
+            return {
+                selectedColor: 'primary',
+                colors: [
+                    'primary',
+                    'info',
+                    'success',
+                    'warning',
+                    'danger',
+                    'white',
+                    'black',
+                    'light',
+                    'dark'
+                ]
+            }
+        } 
     }
 </script>
 
