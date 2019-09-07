@@ -18,7 +18,7 @@
                         :icon="props.expanded ? 'menu-down' : 'menu-up'">
                     </b-icon>
                 </template>
-                <b-menu-item icon="account" label="Clock Color"></b-menu-item>
+                <ClockSettings />
                 <b-menu-item icon="cellphone-link" label="Background"></b-menu-item>
                 <b-menu-item icon="cellphone-link" label="UI Colors"></b-menu-item>
                 <!-- <b-menu-item icon="cash-multiple" label="Payments" disabled></b-menu-item> -->
@@ -38,8 +38,30 @@
 </template>
 
 <script>
+import Clock from '~/components/Clock'
+import ClockSettings from '~/components/Header/Settings/ClockSettings'
     export default {
-        layout: ''
+        layout: '',
+        components: {
+            Clock,
+            ClockSettings
+        },
+        data() {
+            return {
+                selectedColor: 'primary',
+                colors: [
+                    'primary',
+                    'info',
+                    'success',
+                    'warning',
+                    'danger',
+                    'white',
+                    'black',
+                    'light',
+                    'dark'
+                ]
+            }
+        }
     }
 </script>
 

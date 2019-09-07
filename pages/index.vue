@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <h1 class="title">
-      <Clock />
+        <Clock />
       </h1>
       <h2 class="subtitle">
       <Quotes />

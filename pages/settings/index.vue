@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Settings from '~/components/Header/Settings'
+import Settings from '~/components/Header/Settings/Settings'
     export default {
         layout: 'settings',
         components: {
