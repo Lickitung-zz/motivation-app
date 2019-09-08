@@ -15,7 +15,7 @@ import {db} from '../plugins/firebase'
                 messages: db.collection("messages")
             }
         },
-        data: function() {
+        data() {
             return {
                 messages: ''
             }

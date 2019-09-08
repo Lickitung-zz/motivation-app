@@ -35,7 +35,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    // '~plugins/buefy'
+    '~plugins/buefy',
     '~plugins/firebase'
   ],
   /*
@@ -47,7 +47,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    'nuxt-buefy',
+    // 'nuxt-buefy',
     'bootstrap-vue/nuxt'
   ],
   /*
