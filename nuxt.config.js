@@ -36,6 +36,7 @@ export default {
   */
   plugins: [
     // '~plugins/buefy'
+    '~plugins/firebase'
   ],
   /*
   ** Nuxt.js dev-modules

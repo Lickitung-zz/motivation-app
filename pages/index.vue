@@ -8,6 +8,12 @@
       <Quotes />
       </h2>
       <section>
+
+        <!-- <li v-for="(message, key) in messages" :key="key">
+          <ul>{{message.text}}</ul>
+        </li> -->
+
+        <p v-for="(message, key) in messages" :key="key">{{message.text}}</p>
         
         <!-- <button class="button is-primary is-medium"
             @click="isCardModalActive = true">
@@ -23,6 +29,7 @@
 import Clock from '~/components/Clock'
 import Quotes from '~/components/Quotes'
 import NavBar from '~/components/Header/NavBar/NavBar'
+import {db} from '../plugins/firebase'
 
 export default {
   components: {
@@ -33,9 +40,15 @@ export default {
   created() {
     
   },
+  firestore() {
+    return {
+      messages: db.collection("messages")
+    }
+  },
   data() {
     return {
-      datenow: ''
+      datenow: '',
+      messages: ''
     }
   },
   methods: {
