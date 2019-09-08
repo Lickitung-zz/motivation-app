@@ -5,7 +5,7 @@
         <Clock />
       </h1>
       <h2 class="subtitle">
-      <Quotes />
+      <Messages />
       </h2>
       <section>
 
@@ -13,7 +13,7 @@
           <ul>{{message.text}}</ul>
         </li> -->
 
-        <p v-for="(message, key) in messages" :key="key">{{message.text}}</p>
+        <!-- <p v-for="(message, key) in messages" :key="key">{{message.text}}</p> -->
         
         <!-- <button class="button is-primary is-medium"
             @click="isCardModalActive = true">
@@ -27,14 +27,14 @@
 
 <script>
 import Clock from '~/components/Clock'
-import Quotes from '~/components/Quotes'
+import Messages from '~/components/Messages'
 import NavBar from '~/components/Header/NavBar/NavBar'
 import {db} from '../plugins/firebase'
 
 export default {
   components: {
     Clock,
-    Quotes,
+    Messages,
     NavBar
   },
   created() {
