@@ -17,7 +17,8 @@
     "moment": "^2.24.0",
     "nuxt": "^2.0.0",
     "nuxt-buefy": "file:nuxt-buefy",
-    "vuefire": "^2.2.0-alpha.0"
+    "vuefire": "^2.2.0-alpha.0",
+    "vuexfire": "^3.2.0-alpha.0"
   },
   "devDependencies": {}
 }

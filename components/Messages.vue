@@ -2,30 +2,23 @@
     <div>
         <section>
             <!-- {{messages[Math.floor(Math.random()*messages.length)]}} -->
-            {{randomMessage()}}
+            <!-- {{messages}} -->
         </section>  
     </div>
 </template>
 
 <script>
-import {db} from '../plugins/firebase'
+import { mapState } from 'vuex'
+
     export default {
-        firestore() {
-            return {
-                messages: db.collection("messages")
-            }
-        },
-        data() {
-            return {
-                messages: ''
-            }
-        },
         methods: {
             randomMessage() {
                 var randomMessage = this.messages[Math.floor(Math.random()*this.messages.length)];
                 return randomMessage
             }
-        }
+        },
+        // computed: mapState('messages', ['messages'])
+        
         
     }
 </script>

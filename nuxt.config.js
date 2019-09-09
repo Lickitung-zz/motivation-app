@@ -35,8 +35,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~plugins/buefy',
-    '~plugins/firebase'
+    '~plugins/buefy'
   ],
   /*
   ** Nuxt.js dev-modules
