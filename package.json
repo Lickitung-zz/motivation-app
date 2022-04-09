@@ -14,7 +14,7 @@
     "bootstrap-vue": "^2.0.0",
     "buefy": "^0.8.3",
     "firebase": "^6.6.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "nuxt": "^2.0.0",
     "nuxt-buefy": "file:nuxt-buefy",
     "vuefire": "^2.2.0-alpha.0",
